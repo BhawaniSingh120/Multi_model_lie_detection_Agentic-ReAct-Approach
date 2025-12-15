@@ -54,5 +54,66 @@ The system relies on the following datasets, which should be placed in the `raw_
 
     *Note: Ensure you have `ffmpeg` installed on your system if you encounter issues with audio extraction.*
 
+## 🖥️ Usage
+
+### Running the Web Application
+To start the lie detection interface:
+
+```bash
+streamlit run app.py
+```
+
+-   Upload a video file (`.mp4`, `.mov`, `.avi`).
+-   The system will process the video, extract features, and display the probability of Truth vs. Deception.
+
+### Running the Full Pipeline
+The project includes a batch script (`run_all.bat`) to execute the entire pipeline (Preprocessing -> Training -> Interpretation -> App).
+
+To run the pipeline manually or retrain the model:
+
+1.  **Preprocessing**: Extracts features from the raw dataset.
+    ```bash
+    python -m src.preprocessor
+    ```
+2.  **Training**: Runs 5-Fold Cross-Validation.
+    ```bash
+    python -m src.train
+    ```
+3.  **Final Training**: Trains the final model on all available data.
+    ```bash
+    python -m src.train_final
+    ```
+4.  **Interpretation**: Generates feature importance analysis.
+    ```bash
+    python -m src.interpret
+    ```
+
+## 📂 Project Structure
+
+```
+Multi_Modal_Lie_Detection_System/
+├── app.py                # Main Streamlit application entry point
+├── run_all.bat           # Script to run the full training/inference pipeline
+├── requirements.txt      # Python dependencies
+├── src/                  # Source code
+│   ├── config.py         # Configuration settings (paths, hyperparameters)
+│   ├── model.py          # Lite-CNN model architecture definition
+│   ├── preprocessor.py   # Data preprocessing logic
+│   ├── train.py          # Training script (Cross-Validation)
+│   ├── train_final.py    # Training script (Final Model)
+│   ├── interpret.py      # Feature interpretation script
+│   └── preprocessing/    # Sub-modules for Visual/Audio processing
+├── models/               # Directory for saving trained models
+├── data/                 # Directory for processed data and artifacts
+└── raw_data/             # Directory for original datasets
+```
+
+## 🏗️ Technology Stack
+
+-   **Frontend**: Streamlit
+-   **Machine Learning**: TensorFlow / Keras
+-   **Computer Vision**: OpenCV, Dlib provided logic (via MobileNetV2 in code context)
+-   **Audio Processing**: OpenAI Whisper, MoviePy
+-   **Data Processing**: NumPy, Pandas, Scikit-learn
 
 
