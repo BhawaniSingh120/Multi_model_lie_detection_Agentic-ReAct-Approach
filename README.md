@@ -30,3 +30,29 @@ The system relies on the following datasets, which should be placed in the `raw_
    git clone <repository-url>
    cd Multi_Modal_Lie_Detection_System
 
+## �🛠️ Installation
+
+1.  **Clone the Repository**
+    ```bash
+    git clone <repository-url>
+    cd Multi_Modal_Lie_Detection_System
+    ```
+
+2.  **Set Up a Virtual Environment** (Recommended)
+    ```bash
+    python -m venv .venv
+    # Windows
+    .venv\Scripts\activate
+    # Mac/Linux
+    source .venv/bin/activate
+    ```
+
+3.  **Install Dependencies**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+    *Note: Ensure you have `ffmpeg` installed on your system if you encounter issues with audio extraction.*
+
+
+
