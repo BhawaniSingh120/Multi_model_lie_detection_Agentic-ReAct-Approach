@@ -23,13 +23,6 @@ The system relies on the following datasets, which should be placed in the `raw_
    - **Path**: `raw_data/dataset2.zip`
    - **Description**: An additional proprietary or supplementary dataset used to expand the training distribution and improve model robustness.
 
-## 🛠️ Installation
-
-1. **Clone the Repository**
-   ```bash
-   git clone <repository-url>
-   cd Multi_Modal_Lie_Detection_System
-
 ## �🛠️ Installation
 
 1.  **Clone the Repository**
@@ -115,5 +108,6 @@ Multi_Modal_Lie_Detection_System/
 -   **Computer Vision**: OpenCV, Dlib provided logic (via MobileNetV2 in code context)
 -   **Audio Processing**: OpenAI Whisper, MoviePy
 -   **Data Processing**: NumPy, Pandas, Scikit-learn
+
 
 
