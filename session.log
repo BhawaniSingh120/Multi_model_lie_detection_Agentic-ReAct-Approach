@@ -1,0 +1,26 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20251212113139
+Username: BHAWANIPC\Hp
+RunAs User: BHAWANIPC\Hp
+Configuration Name: 
+Machine: BHAWANIPC (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\Hp\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+Process ID: 31544
+PSVersion: 5.1.26100.7462
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7462
+BuildVersion: 10.0.26100.7462
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is session.log
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cHp\x5cDesktop\x5cgit\x5clie_detectionPS C:\Users\Hp\Desktop\git\lie_detection> ]633;B
+(.venv) .venv\Scripts\streamlit run app.py
+1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 212ms/step
+  Stopping...
+(.venv) TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cHp\x5cDesktop\x5cgit\x5clie_detectionPS C:\Users\Hp\Desktop\git\lie_detection> ]633;B

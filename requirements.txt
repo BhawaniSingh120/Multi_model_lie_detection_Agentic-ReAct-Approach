@@ -1,0 +1,11 @@
+tensorflow
+opencv-python-headless
+moviepy
+openai-whisper
+scikit-learn
+pandas
+numpy
+tqdm
+nltk
+streamlit
+notebook

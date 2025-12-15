@@ -1,0 +1,7 @@
+raw_data/
+data/
+test_video/
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
